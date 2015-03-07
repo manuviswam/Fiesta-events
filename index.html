@@ -18,16 +18,29 @@
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
-
+	<link href="css/poster.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/poster.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	
+	<div id="poster_div">
+		<div id="overlay_div" onclick="closePoster();"></div>
+		<div id="poster_img_div" style="text-align:center;">
+			<img id="poster_img" src="img/poster.jpg"/>
+			<a id="close_button_link" href="#" title="Close" onclick="closePoster();">
+				<img id="close_button" src="img/close-button.png">
+			</a>
+		</div>
+	</div>
+
 	<!-- Preloader -->
 	<div id="preloader">
 	  <div id="load"></div>
 	</div>
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav id="navbar_div" class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">

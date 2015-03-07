@@ -1,0 +1,28 @@
+#overlay_div {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: 0.85;
+	z-index: 1001;
+}
+
+#poster_img {
+	position: absolute;
+	z-index: 1002;
+	height: 90%;
+	margin-top: 2%;
+	box-shadow: 0px 0px 36px 3px rgba(245,245,245,0.2);
+}
+
+#navbar_div {
+	display:none;
+}
+
+#close_button {
+	position: absolute;
+	z-index: 1003;
+	height: 30px;
+	width: 30px;
+	margin-top: 2%;
+}
